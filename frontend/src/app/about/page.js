@@ -2,7 +2,7 @@ const AboutPage = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-24 space-y-16">
       <header className="text-center">
-        <h1 className="text-5xl font-bold uppercase mb-4">Our Story</h1>
+        <h1 className="text-5xl font-bold uppercase">Our Story</h1>
         <p className="text-xs uppercase tracking-[0.4em] font-bold text-zinc-400">Forged in the urban battlefield</p>
       </header>
 
