@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-"build": "next build --no-lint",
+    "build": "next build --no-lint",
     "start": "next start",
     "lint": "eslint"
   },
@@ -13,7 +13,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.14.0",
-    "next": "15.1.0",
+    "next": "^16.2.6",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-hot-toast": "^2.4.1",
@@ -24,6 +24,5 @@
     "eslint": "^9.16.0",
     "eslint-config-next": "^15.5.18",
     "tailwindcss": "^4.0.0"
-    
   }
 }
