@@ -1,0 +1,129 @@
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+- Environments: .env.local
+✓ Ready in 547ms
+
+○ Compiling / ...
+ GET / 200 in 6.3s (next.js: 5.3s, application-code: 1071ms)
+ GET /shop 200 in 941ms (next.js: 714ms, application-code: 227ms)
+Failed to proxy http://localhost:5000/api/products?search=&category=&sort=newest AggregateError: 
+    at ignore-listed frames {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5000
+        at <unknown> (Error: connect ECONNREFUSED ::1:5000) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5000
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5000
+        at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5000) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5000
+    }
+  ]
+}
+AggregateError: 
+    at ignore-listed frames {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5000
+        at <unknown> (Error: connect ECONNREFUSED ::1:5000) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5000
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5000
+        at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5000) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5000
+    }
+  ]
+}
+Failed to proxy http://localhost:5000/api/categories AggregateError: 
+    at ignore-listed frames {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5000
+        at <unknown> (Error: connect ECONNREFUSED ::1:5000) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5000
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5000
+        at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5000) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5000
+    }
+  ]
+}
+AggregateError: 
+    at ignore-listed frames {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5000
+        at <unknown> (Error: connect ECONNREFUSED ::1:5000) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5000
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5000
+        at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5000) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5000
+    }
+  ]
+}
+[browser] Error fetching data: AxiosError: Request failed with status code 500
+    at async ShopPage.useEffect.fetchData (src/app/shop/page.js:21:35)
+  19 |     const fetchData = async () => {
+  20 |       try {
+> 21 |         const [prodRes, catRes] = await Promise.all([
+     |                                   ^
+  22 |           axios.get(`/api/products?search=${search}&category=${category}&sort=${sort}`),
+  23 |           axios.get('/api/categories')
+  24 |         ]); (src/app/shop/page.js:28:17)
+ GET /auth/login 200 in 820ms (next.js: 726ms, application-code: 93ms)
+⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+- Environments: .env.local
+✓ Ready in 416ms
+⚠ `images.domains` is deprecated in favor of `images.remotePatterns`. Please update next.config.mjs to protect your application from malicious users.
+
+Error: Turbopack build failed with 1 errors:
+./src/app
+Error: Next.js inferred your workspace root, but it may not be correct.
+    We couldn't find the Next.js package (next/package.json) from the project directory: /app/frontend/src/app
+     To fix this, set turbopack.root in your Next.js config, or ensure the Next.js package is resolvable from this directory.
+    Note: For security and performance reasons, files outside of the project directory will not be compiled.
+    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+
+    at ignore-listed frames
+[?25h
